@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
+   <children>
+      <Text layoutX="217.0" layoutY="140.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Login de usuário" wrappingWidth="148.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Label layoutX="190.0" layoutY="161.0" text="Usuário:" />
+      <Label layoutX="198.0" layoutY="193.0" text="Senha:" />
+      <TextField fx:id="txtUsuario" layoutX="245.0" layoutY="157.0" prefHeight="25.0" prefWidth="135.0" />
+      <PasswordField fx:id="txtSenha" layoutX="245.0" layoutY="189.0" prefHeight="25.0" prefWidth="135.0" />
+      <Button fx:id="btEntrar" layoutX="255.0" layoutY="228.0" mnemonicParsing="false" onAction="#acEntrar" text="Entrar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="acAviso" layoutX="225.0" layoutY="278.0" prefHeight="20.0" prefWidth="148.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="-1.0" prefHeight="40.0" prefWidth="600.0">
+        <items>
+          <Button mnemonicParsing="false" text="Login" />
+            <Button mnemonicParsing="false" onAction="#acCadastroTroca" text="Cadastro" />
+            <Button mnemonicParsing="false" onAction="#acBuscarTroca" text="Buscar" />
+            <Button mnemonicParsing="false" onAction="#acInserirTroca" text="Inserir Item" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
